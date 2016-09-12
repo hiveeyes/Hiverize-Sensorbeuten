@@ -138,15 +138,15 @@ def logging():
     try:
         os.makedirs(folderName, mode=0o777)
     except OSError, e:
-	if e.errno != 17:
-        	print('Error creating folder: ' + str(e) ) # errno 17= File existed 
-	else: 
-		pass 
+        if e.errno != 17:
+            print('Error creating folder: ' + str(e) ) # errno 17= File existed
+        else:
+            pass
     print('Folder created')
     # Form String out of measurement
     #tempString = str(ceil(datetime.datetime.timestamp(actualDateTime)))
     tempString = str(time.mktime(actualDateTime.timetuple()))
-    
+
     tempString += ', ' + ', '.join("{}".
                                    format(val) for val in ds1820Temps.values())
     tempString += ', ' + ', '.join("{}".
