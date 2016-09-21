@@ -61,7 +61,7 @@ Self-hosted
 When aiming at a local or private setup
 
 #. Just follow the guidelines about how to
-   `install the data acquisition system on a RaspberryPi <https://getkotori.org/docs/setup/debian-quickstart.html>`__.
+   `install the data acquisition system on a RaspberryPi <https://hiveeyes.org/docs/system/setup-backend.html>`__.
 
 #. Then, configure the backend for the *Hiverize* realm by copying
    and activating the included configuration file ``backend.ini``::
@@ -80,7 +80,6 @@ When aiming at a local or private setup
     mqtt_host = 'backend.hiverize.org'
 
 
-
 ************
 Grafana demo
 ************
@@ -90,4 +89,19 @@ What you can expect from this backend is an instant-on, interactive graph visual
     :alt: Screenshot of Hiverize dummy measurement data in Grafana
 
     Screenshot of Hiverize dummy measurement data in Grafana
+
+
+*******
+Outlook
+*******
+To get a rough idea about additional features...
+
+- There are different ways to send measurement data to the backend, see `data acquisition`_.
+- The system can send alerts on significant events, see `Schwarmalarm`_.
+- Data can be exported easily in different ways, see `data export`_.
+
+
+.. _data acquisition: https://hiveeyes.org/docs/system/handbook.html#data-acquisition
+.. _Schwarmalarm: https://hiveeyes.org/docs/system/schwarmalarm-mqttwarn.html
+.. _data export: https://getkotori.org/docs/handbook/export/
 
